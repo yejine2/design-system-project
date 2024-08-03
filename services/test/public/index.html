@@ -27,6 +27,34 @@
     <title>React App</title>
   </head>
   <body>
+    <script>
+      // 초기 로드 시 로컬 스토리지에서 테마 설정을 확인
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) {
+        document.body.classList.add(savedTheme);
+      } else {
+        const isDarkMode = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        if (isDarkMode) {
+          document.body.classList.add("theme-dark");
+          localStorage.setItem("theme", "theme-dark");
+        }
+      }
+
+      const mediaQueryList = window.matchMedia("(prefers-color-scheme: dark)");
+
+      mediaQueryList.addEventListener("change", (e) => {
+        const isDarkMode = e.matches;
+        if (isDarkMode) {
+          document.body.classList.add("theme-dark");
+          localStorage.setItem("theme", "theme-dark");
+        } else {
+          document.body.classList.remove("theme-dark");
+          localStorage.setItem("theme", "theme-light");
+        }
+      });
+    </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
