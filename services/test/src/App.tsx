@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import styled from "@emotion/styled";
-import { vars } from "@ooz/themes";
+import { vars, classes } from "@ooz/themes";
 
 function App() {
   return <View />;
@@ -27,5 +27,6 @@ const View = () => (
 );
 
 const Text = styled.p`
+  ${classes.typography.heading["3xl"]}
   color: ${vars.colors.$static.light.red[500]};
 `;
