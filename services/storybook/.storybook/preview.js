@@ -33,8 +33,6 @@ const preview = {
 const initTheme = () => {
   const isDarkTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-  console.log("isDarkTheme", isDarkTheme);
-
   if (isDarkTheme) {
     document.body.classList.add("theme-dark");
   }
