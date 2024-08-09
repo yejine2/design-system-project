@@ -17,3 +17,7 @@
 dist
 
 .nx
+
+# storybook
+**/storybook-static/
+*storybook.log
