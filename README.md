@@ -32,3 +32,16 @@ packages
 
 #### 1.3. react-components-*
 - `@ooz/react-components-*` 패키지는 `@ooz/themes` 기반 CSS 변수들을 활용하여 재사용 가능한 리액트 **컴포넌트 단위의 UI 라이브러리**를 제공합니다. (button, card 등)
+
+
+### 2. Services
+
+```
+services
+ ┣ storybook
+ ┗ 기타 제품들
+```
+`services`는 최종 제품 및 애플리케이션을 관리하는 디렉토리입니다. 각 서비스는 packages에서 제공하는 라이브러리와 설정을 활용하여 구축됩니다.
+
+#### 1.1 storybook
+- `@ooz/storybook` 패키지는 디자인 시스템과 UI 컴포넌트들이 의도한 대로 동작하는지 테스트하고 시각적으로 확인하는 데 사용됩니다.
