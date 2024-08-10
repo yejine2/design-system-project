@@ -11,8 +11,10 @@ import {
   spinnerStyle,
 } from "./style.css";
 import { vars } from "@ooz/themes";
+import { useButton } from "@ooz/react-hooks-button";
 
 const Button = (props: ButtonProps, ref: React.Ref<HTMLButtonElement>) => {
+  const { buttonProps } = useButton(props);
   const {
     variant = "solid",
     size = "md",
@@ -37,8 +39,7 @@ const Button = (props: ButtonProps, ref: React.Ref<HTMLButtonElement>) => {
 
   return (
     <button
-      {...props}
-      role="button"
+      {...buttonProps}
       className={clsx([
         buttonStyle({
           size,

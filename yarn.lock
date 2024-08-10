@@ -2117,6 +2117,7 @@ __metadata:
   resolution: "@ooz/react-components-button@workspace:packages/react/components/button"
   dependencies:
     "@ooz/esbuild-config": "workspace:^"
+    "@ooz/react-hooks-button": "workspace:^"
     "@ooz/themes": "workspace:^"
     "@types/react": "npm:^18.2.21"
     "@types/react-dom": "npm:^18.2.7"
@@ -2161,7 +2162,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@ooz/react-hooks-button@workspace:packages/react/hooks/button":
+"@ooz/react-hooks-button@workspace:^, @ooz/react-hooks-button@workspace:packages/react/hooks/button":
   version: 0.0.0-use.local
   resolution: "@ooz/react-hooks-button@workspace:packages/react/hooks/button"
   dependencies:
@@ -2184,6 +2185,7 @@ __metadata:
     "@chromatic-com/storybook": "npm:^1.6.1"
     "@ooz/react-components-button": "workspace:^"
     "@ooz/react-components-layout": "workspace:^"
+    "@ooz/react-hooks-button": "workspace:^"
     "@ooz/themes": "workspace:^"
     "@storybook/addon-essentials": "npm:^8.2.7"
     "@storybook/addon-interactions": "npm:^8.2.7"
