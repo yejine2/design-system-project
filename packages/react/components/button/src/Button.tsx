@@ -21,9 +21,7 @@ const Button = (props: ButtonProps, ref: React.Ref<HTMLButtonElement>) => {
     leftIcon,
     rightIcon,
     isLoading,
-    isDisabled = false,
     children,
-    onKeyDown,
     style,
   } = props;
 
@@ -37,26 +35,9 @@ const Button = (props: ButtonProps, ref: React.Ref<HTMLButtonElement>) => {
       ? vars.colors.$scale[color][700]
       : vars.colors.$scale[color][100];
 
-  const disabled = isDisabled || isLoading;
-
-  // button a11y
-  const handleKeyDown = (event: React.KeyboardEvent<HTMLButtonElement>) => {
-    onKeyDown?.(event);
-
-    if (event.key === "Enter" || event.key === "13") {
-      event.preventDefault();
-      event.currentTarget.click();
-    }
-  };
-
   return (
     <button
       {...props}
-      ref={ref}
-      onKeyDown={handleKeyDown}
-      onClick={() => {
-        console.log("test");
-      }}
       role="button"
       className={clsx([
         buttonStyle({
@@ -64,8 +45,8 @@ const Button = (props: ButtonProps, ref: React.Ref<HTMLButtonElement>) => {
           variant,
         }),
       ])}
-      data-loading={isLoading}
-      disabled={disabled}
+      // 기능 ^
+      ref={ref}
       style={{
         ...assignInlineVars({
           [enableColorVariant]: enableColor,

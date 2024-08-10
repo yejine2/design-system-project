@@ -2161,6 +2161,22 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ooz/react-hooks-button@workspace:packages/react/hooks/button":
+  version: 0.0.0-use.local
+  resolution: "@ooz/react-hooks-button@workspace:packages/react/hooks/button"
+  dependencies:
+    "@ooz/esbuild-config": "workspace:^"
+    "@types/react": "npm:^18.2.21"
+    "@types/react-dom": "npm:^18.2.7"
+    clsx: "npm:^2.0.0"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    typescript: "npm:^5.5.4"
+  peerDependencies:
+    react: "*"
+  languageName: unknown
+  linkType: soft
+
 "@ooz/storybook@workspace:services/storybook":
   version: 0.0.0-use.local
   resolution: "@ooz/storybook@workspace:services/storybook"
