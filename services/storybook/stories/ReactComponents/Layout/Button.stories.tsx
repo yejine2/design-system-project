@@ -3,7 +3,7 @@ import "@ooz/react-components-button/style.css";
 import { Button as _Button } from "@ooz/react-components-button";
 import { vars } from "@ooz/themes";
 import { Text } from "@ooz/react-components-layout";
-import { useButton } from "@ooz/react-hooks-button";
+import { useButton, useToggleButton } from "@ooz/react-hooks-button";
 
 export default {
   title: "React Components/Button",
@@ -62,4 +62,25 @@ const TextButton = () => {
 
 export const TextButtonStory = {
   render: () => <TextButton />,
+};
+
+const ToggleButton = () => {
+  const { buttonProps, isSelected } = useToggleButton(
+    { elementType: "button" },
+    false,
+  );
+
+  return (
+    <_Button
+      {...buttonProps}
+      variant={isSelected ? "solid" : "outline"}
+      color="green"
+    >
+      {isSelected ? "😀" : "😂"}
+    </_Button>
+  );
+};
+
+export const ToggleButtonStory = {
+  render: () => <ToggleButton />,
 };
