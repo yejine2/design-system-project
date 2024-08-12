@@ -46,7 +46,6 @@ const Button = (props: ButtonProps, ref: React.Ref<HTMLButtonElement>) => {
           variant,
         }),
       ])}
-      // 기능 ^
       ref={ref}
       style={{
         ...assignInlineVars({
