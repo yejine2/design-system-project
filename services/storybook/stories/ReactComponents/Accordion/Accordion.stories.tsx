@@ -23,9 +23,9 @@ export const AccordionStory = {
     <Accordion defaultActiveItems={["목록1"]} style={{ width: "500px" }}>
       <AccordionItem itemName="목록1">
         <AccordionButton>
-          {/* <Heading color="gray" fontSize="lg">
+          <Heading color="gray" fontSize="lg">
             목록 1
-          </Heading> */}
+          </Heading>
         </AccordionButton>
         <AccordionPanel>
           <Text color="gray" fontSize="md">
