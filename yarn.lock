@@ -2205,6 +2205,23 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ooz/react-hooks-input@workspace:packages/react/hooks/input":
+  version: 0.0.0-use.local
+  resolution: "@ooz/react-hooks-input@workspace:packages/react/hooks/input"
+  dependencies:
+    "@ooz/esbuild-config": "workspace:^"
+    "@ooz/react-hooks-toggle": "workspace:^"
+    "@types/react": "npm:^18.2.21"
+    "@types/react-dom": "npm:^18.2.7"
+    clsx: "npm:^2.0.0"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    typescript: "npm:^5.5.4"
+  peerDependencies:
+    react: "*"
+  languageName: unknown
+  linkType: soft
+
 "@ooz/react-hooks-toggle@workspace:^, @ooz/react-hooks-toggle@workspace:packages/react/hooks/toggle":
   version: 0.0.0-use.local
   resolution: "@ooz/react-hooks-toggle@workspace:packages/react/hooks/toggle"
