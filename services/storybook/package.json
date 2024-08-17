@@ -5,6 +5,7 @@
     "@chromatic-com/storybook": "^1.6.1",
     "@ooz/react-components-accordion": "workspace:^",
     "@ooz/react-components-button": "workspace:^",
+    "@ooz/react-components-input": "workspace:^",
     "@ooz/react-components-layout": "workspace:^",
     "@ooz/react-hooks-button": "workspace:^",
     "@ooz/themes": "workspace:^",
