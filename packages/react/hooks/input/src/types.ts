@@ -16,4 +16,5 @@ export type UseInputReturn = {
     "aria-invalid": boolean;
     "aria-required": boolean;
   };
+  valueCount: number; // 글자수 카운트
 };
