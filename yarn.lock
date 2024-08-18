@@ -2214,6 +2214,32 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@ooz/react-components-select@workspace:^, @ooz/react-components-select@workspace:packages/react/components/select":
+  version: 0.0.0-use.local
+  resolution: "@ooz/react-components-select@workspace:packages/react/components/select"
+  dependencies:
+    "@ooz/esbuild-config": "workspace:^"
+    "@ooz/react-hooks-select": "workspace:^"
+    "@ooz/themes": "workspace:^"
+    "@types/react": "npm:^18.2.21"
+    "@types/react-dom": "npm:^18.2.7"
+    "@vanilla-extract/css": "npm:^1.13.0"
+    "@vanilla-extract/dynamic": "npm:^2.1.1"
+    "@vanilla-extract/esbuild-plugin": "npm:^2.3.0"
+    "@vanilla-extract/recipes": "npm:^0.5.0"
+    "@vanilla-extract/sprinkles": "npm:^1.6.1"
+    autoprefixer: "npm:^10.4.15"
+    clsx: "npm:^2.0.0"
+    postcss: "npm:^8.4.29"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    typescript: "npm:^5.5.4"
+  peerDependencies:
+    "@ooz/themes": "workspace:^"
+    react: "*"
+  languageName: unknown
+  linkType: soft
+
 "@ooz/react-hooks-button@workspace:^, @ooz/react-hooks-button@workspace:packages/react/hooks/button":
   version: 0.0.0-use.local
   resolution: "@ooz/react-hooks-button@workspace:packages/react/hooks/button"
@@ -2236,7 +2262,22 @@ __metadata:
   resolution: "@ooz/react-hooks-input@workspace:packages/react/hooks/input"
   dependencies:
     "@ooz/esbuild-config": "workspace:^"
-    "@ooz/react-hooks-toggle": "workspace:^"
+    "@types/react": "npm:^18.2.21"
+    "@types/react-dom": "npm:^18.2.7"
+    clsx: "npm:^2.0.0"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    typescript: "npm:^5.5.4"
+  peerDependencies:
+    react: "*"
+  languageName: unknown
+  linkType: soft
+
+"@ooz/react-hooks-select@workspace:^, @ooz/react-hooks-select@workspace:packages/react/hooks/select":
+  version: 0.0.0-use.local
+  resolution: "@ooz/react-hooks-select@workspace:packages/react/hooks/select"
+  dependencies:
+    "@ooz/esbuild-config": "workspace:^"
     "@types/react": "npm:^18.2.21"
     "@types/react-dom": "npm:^18.2.7"
     clsx: "npm:^2.0.0"
@@ -2273,6 +2314,7 @@ __metadata:
     "@ooz/react-components-button": "workspace:^"
     "@ooz/react-components-input": "workspace:^"
     "@ooz/react-components-layout": "workspace:^"
+    "@ooz/react-components-select": "workspace:^"
     "@ooz/react-hooks-button": "workspace:^"
     "@ooz/themes": "workspace:^"
     "@storybook/addon-a11y": "npm:^8.2.9"
