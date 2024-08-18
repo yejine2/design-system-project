@@ -1,5 +1,5 @@
 {
-  "name": "@ooz/react-components-button",
+  "name": "@ooz/react-components-input",
   "version": "0.0.1",
   "type": "module",
   "main": "dist/index.js",
@@ -39,7 +39,7 @@
     "react": "*"
   },
   "dependencies": {
-    "@ooz/react-hooks-button": "workspace:^",
+    "@ooz/react-hooks-input": "workspace:^",
     "clsx": "^2.0.0"
   }
 }

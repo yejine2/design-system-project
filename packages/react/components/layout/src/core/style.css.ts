@@ -3,6 +3,9 @@ import { style } from "@vanilla-extract/css";
 import { defineProperties, createSprinkles } from "@vanilla-extract/sprinkles";
 
 export const BaseStyle = style({
+  margin: 0,
+  padding: 0,
+
   // @ts-ignore
   "&:focus-visible": {
     outline: "none",
