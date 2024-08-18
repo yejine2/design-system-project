@@ -1,6 +1,6 @@
 import React from "react";
 import "@ooz/react-components-input/style.css";
-import { Input } from "@ooz/react-components-input";
+import { Input, InputGroup, InputLeftAddon } from "@ooz/react-components-input";
 
 export default {
   title: "React Components/Input",
@@ -12,4 +12,13 @@ export default {
 
 export const InputStory = {
   render: () => <Input placeholder="내용을 입력해주세요." />,
+};
+
+export const InputGroupStory = {
+  render: () => (
+    <InputGroup size="lg" color="red">
+      <InputLeftAddon>$</InputLeftAddon>
+      <Input placeholder="dd" />
+    </InputGroup>
+  ),
 };
