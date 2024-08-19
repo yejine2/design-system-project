@@ -8,6 +8,7 @@
     "@ooz/react-components-input": "workspace:^",
     "@ooz/react-components-layout": "workspace:^",
     "@ooz/react-components-select": "workspace:^",
+    "@ooz/react-components-toast": "workspace:^",
     "@ooz/react-hooks-button": "workspace:^",
     "@ooz/themes": "workspace:^",
     "@storybook/addon-a11y": "^8.2.9",
