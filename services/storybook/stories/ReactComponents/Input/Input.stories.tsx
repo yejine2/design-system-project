@@ -22,3 +22,16 @@ export const InputGroupStory = {
     </InputGroup>
   ),
 };
+
+// 비주얼 테스트
+export const InputVariantFilledStory = {
+  render: () => <Input variant="filled" placeholder="filled" />,
+};
+
+// 접근성 테스트
+export const InputFocusVisibleState = {
+  render: () => <Input />,
+  parameters: {
+    pseudo: { focusVisible: true },
+  },
+};
