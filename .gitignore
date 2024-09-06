@@ -21,3 +21,10 @@ dist
 # storybook
 **/storybook-static/
 *storybook.log
+
+# next.js
+**/.next/
+**/out/
+
+# production
+**/build
