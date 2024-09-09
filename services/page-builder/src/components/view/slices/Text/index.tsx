@@ -1,5 +1,6 @@
 import { Text } from "@ooz/react-components-layout";
 import { vars } from "@ooz/themes";
+import { useMemo } from "react";
 
 type Props = {
   text: string;
@@ -32,25 +33,33 @@ export const TextSlice = ({ text, sliceStyle, highlightTexts = [] }: Props) => {
     highlightTextWeight,
   } = sliceStyle ?? {};
 
-  // g (global): 모든 일치 플래그, i (ignoreCase): 대소문자를 구분하지 않고 일치하는지 검사
-  const regex = new RegExp(`(${highlightTexts.join("|")})`, "gi");
-  const highlightedText = text.split(regex).map((word, index) => {
-    if (highlightTexts.some((query) => new RegExp(query, "i").test(word))) {
-      return (
-        <span
-          key={`${word}-${index}`}
-          style={{
-            color: highlightTextColor,
-            fontWeight: highlightTextWeight ?? textWeight,
-          }}
-        >
-          {word}
-        </span>
-      );
+  const hasHighlightText = highlightTexts.length > 0;
+  const highlightedText = useMemo(() => {
+    if (hasHighlightText) {
+      // g (global): 모든 일치 플래그, i (ignoreCase): 대소문자를 구분하지 않고 일치하는지 검사
+      const regex = new RegExp(`(${highlightTexts.join("|")})`, "gi");
+
+      return text.split(regex).map((word, index) => {
+        if (highlightTexts.some((query) => new RegExp(query, "i").test(word))) {
+          return (
+            <span
+              key={`${word}-${index}`}
+              style={{
+                color: highlightTextColor,
+                fontWeight: highlightTextWeight ?? textWeight,
+              }}
+            >
+              {word}
+            </span>
+          );
+        }
+
+        return word;
+      });
     }
 
-    return word;
-  });
+    return text;
+  }, [text, highlightTexts]);
 
   return (
     <Text
