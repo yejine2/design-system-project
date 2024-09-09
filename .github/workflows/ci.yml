@@ -1,9 +1,9 @@
 name: CI
 on:
-  push:
+  pull_request:
     branches:
       - main
-  pull_request:
+  workflow_dispatch: # 수동 실행 가능하게 추가
 
 jobs:
   main:
