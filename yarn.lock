@@ -2445,6 +2445,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ooz/page-builder@workspace:services/page-builder"
   dependencies:
+    "@ooz/react-components-accordion": "workspace:^"
     "@ooz/react-components-layout": "workspace:^"
     "@ooz/themes": "workspace:^"
     "@types/node": "npm:^22.5.4"
